@@ -1,0 +1,17 @@
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\bin\Debug\net8.0-windows\VecEd.exe
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\bin\Debug\net8.0-windows\VecEd.deps.json
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\bin\Debug\net8.0-windows\VecEd.runtimeconfig.json
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\bin\Debug\net8.0-windows\VecEd.dll
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\bin\Debug\net8.0-windows\VecEd.pdb
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.Form1.resources
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.csproj.GenerateResource.cache
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.AssemblyInfoInputs.cache
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.AssemblyInfo.cs
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.csproj.CoreCompileInputs.cache
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.dll
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\refint\VecEd.dll
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.pdb
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.genruntimeconfig.cache
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\ref\VecEd.dll
+C:\Users\wroma\OneDrive\Рабочий стол\VecEd\obj\Debug\net8.0-windows\VecEd.Properties.Resources.resources
