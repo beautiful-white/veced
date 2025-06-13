@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VecEd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62265f4f38869576629225bb99bfa8551e44f9ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("VecEd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VecEd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
