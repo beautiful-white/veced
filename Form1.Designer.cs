@@ -28,13 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            contextMenuStrip2 = new ContextMenuStrip(components);
-            asdfToolStripMenuItem = new ToolStripMenuItem();
-            contextMenuStrip3 = new ContextMenuStrip(components);
-            toolStripMenuItem1 = new ToolStripMenuItem();
-            contextMenuStrip4 = new ContextMenuStrip(components);
             menuStrip1 = new MenuStrip();
             toolStripMenuItem2 = new ToolStripMenuItem();
             toolStripMenuItemLine = new ToolStripMenuItem();
@@ -54,48 +47,8 @@
             borderColorToolStripMenuItem = new ToolStripMenuItem();
             fillColorToolStripMenuItem = new ToolStripMenuItem();
             colorDialog1 = new ColorDialog();
-            contextMenuStrip2.SuspendLayout();
-            contextMenuStrip3.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(24, 24);
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
-            // 
-            // contextMenuStrip2
-            // 
-            contextMenuStrip2.ImageScalingSize = new Size(24, 24);
-            contextMenuStrip2.Items.AddRange(new ToolStripItem[] { asdfToolStripMenuItem });
-            contextMenuStrip2.Name = "contextMenuStrip2";
-            contextMenuStrip2.Size = new Size(119, 36);
-            // 
-            // asdfToolStripMenuItem
-            // 
-            asdfToolStripMenuItem.Name = "asdfToolStripMenuItem";
-            asdfToolStripMenuItem.Size = new Size(118, 32);
-            asdfToolStripMenuItem.Text = "asdf";
-            // 
-            // contextMenuStrip3
-            // 
-            contextMenuStrip3.ImageScalingSize = new Size(24, 24);
-            contextMenuStrip3.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
-            contextMenuStrip3.Name = "contextMenuStrip3";
-            contextMenuStrip3.Size = new Size(244, 36);
-            // 
-            // toolStripMenuItem1
-            // 
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(243, 32);
-            toolStripMenuItem1.Text = "toolStripMenuItem1";
-            // 
-            // contextMenuStrip4
-            // 
-            contextMenuStrip4.ImageScalingSize = new Size(24, 24);
-            contextMenuStrip4.Name = "contextMenuStrip4";
-            contextMenuStrip4.Size = new Size(61, 4);
             // 
             // menuStrip1
             // 
@@ -118,33 +71,35 @@
             // 
             toolStripMenuItemLine.DropDownItems.AddRange(new ToolStripItem[] { straightToolStripMenuItem, brokenToolStripMenuItem, bezierToolStripMenuItem });
             toolStripMenuItemLine.Name = "toolStripMenuItemLine";
-            toolStripMenuItemLine.Size = new Size(270, 34);
+            toolStripMenuItemLine.Size = new Size(243, 34);
             toolStripMenuItemLine.Text = "Линия";
             // 
             // straightToolStripMenuItem
             // 
             straightToolStripMenuItem.Name = "straightToolStripMenuItem";
-            straightToolStripMenuItem.Size = new Size(270, 34);
+            straightToolStripMenuItem.Size = new Size(187, 34);
             straightToolStripMenuItem.Text = "Прямая";
             straightToolStripMenuItem.Click += straightToolStripMenuItem_Click;
             // 
             // brokenToolStripMenuItem
             // 
             brokenToolStripMenuItem.Name = "brokenToolStripMenuItem";
-            brokenToolStripMenuItem.Size = new Size(270, 34);
+            brokenToolStripMenuItem.Size = new Size(187, 34);
             brokenToolStripMenuItem.Text = "Ломаная";
+            brokenToolStripMenuItem.Click += brokenToolStripMenuItem_Click;
             // 
             // bezierToolStripMenuItem
             // 
             bezierToolStripMenuItem.Name = "bezierToolStripMenuItem";
-            bezierToolStripMenuItem.Size = new Size(270, 34);
+            bezierToolStripMenuItem.Size = new Size(187, 34);
             bezierToolStripMenuItem.Text = "Безье";
+            bezierToolStripMenuItem.Click += bezierToolStripMenuItem_Click;
             // 
             // ToolStripMenuItemPolygon
             // 
             ToolStripMenuItemPolygon.DropDownItems.AddRange(new ToolStripItem[] { squareToolStripMenuItem1, triangleToolStripMenuItem, truePolygonToolStripMenuItem });
             ToolStripMenuItemPolygon.Name = "ToolStripMenuItemPolygon";
-            ToolStripMenuItemPolygon.Size = new Size(270, 34);
+            ToolStripMenuItemPolygon.Size = new Size(243, 34);
             ToolStripMenuItemPolygon.Text = "Многоугольник";
             // 
             // squareToolStripMenuItem1
@@ -152,12 +107,14 @@
             squareToolStripMenuItem1.Name = "squareToolStripMenuItem1";
             squareToolStripMenuItem1.Size = new Size(312, 34);
             squareToolStripMenuItem1.Text = "Прямоугольник";
+            squareToolStripMenuItem1.Click += squareToolStripMenuItem1_Click;
             // 
             // triangleToolStripMenuItem
             // 
             triangleToolStripMenuItem.Name = "triangleToolStripMenuItem";
             triangleToolStripMenuItem.Size = new Size(312, 34);
             triangleToolStripMenuItem.Text = "Треугольник";
+            triangleToolStripMenuItem.Click += triangleToolStripMenuItem_Click;
             // 
             // truePolygonToolStripMenuItem
             // 
@@ -168,6 +125,7 @@
             // 
             // cornersToolStripTextBox
             // 
+            cornersToolStripTextBox.AcceptsReturn = true;
             cornersToolStripTextBox.AutoCompleteCustomSource.AddRange(new string[] { "10", "15", "20", "25", "30", "35", "40" });
             cornersToolStripTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cornersToolStripTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
@@ -176,12 +134,14 @@
             cornersToolStripTextBox.Name = "cornersToolStripTextBox";
             cornersToolStripTextBox.Size = new Size(70, 31);
             cornersToolStripTextBox.ToolTipText = "углов";
+            cornersToolStripTextBox.KeyDown += cornersToolStripTextBox_KeyDown;
             // 
             // ToolStripMenuItemEllipse
             // 
             ToolStripMenuItemEllipse.Name = "ToolStripMenuItemEllipse";
-            ToolStripMenuItemEllipse.Size = new Size(270, 34);
+            ToolStripMenuItemEllipse.Size = new Size(243, 34);
             ToolStripMenuItemEllipse.Text = "Эллипс";
+            ToolStripMenuItemEllipse.Click += ToolStripMenuItemEllipse_Click;
             // 
             // режимToolStripMenuItem
             // 
@@ -193,14 +153,18 @@
             // modeSelectToolStripMenuItem
             // 
             modeSelectToolStripMenuItem.Name = "modeSelectToolStripMenuItem";
-            modeSelectToolStripMenuItem.Size = new Size(270, 34);
+            modeSelectToolStripMenuItem.Size = new Size(205, 34);
             modeSelectToolStripMenuItem.Text = "Выделения";
+            modeSelectToolStripMenuItem.Click += modeSelectToolStripMenuItem_Click;
             // 
             // modeChangeToolStripMenuItem
             // 
+            modeChangeToolStripMenuItem.Checked = true;
+            modeChangeToolStripMenuItem.CheckState = CheckState.Checked;
             modeChangeToolStripMenuItem.Name = "modeChangeToolStripMenuItem";
-            modeChangeToolStripMenuItem.Size = new Size(270, 34);
+            modeChangeToolStripMenuItem.Size = new Size(205, 34);
             modeChangeToolStripMenuItem.Text = "Изменения";
+            modeChangeToolStripMenuItem.Click += modeChangeToolStripMenuItem_Click;
             // 
             // цветЛинииToolStripMenuItem
             // 
@@ -212,14 +176,16 @@
             // borderColorToolStripMenuItem
             // 
             borderColorToolStripMenuItem.Name = "borderColorToolStripMenuItem";
-            borderColorToolStripMenuItem.Size = new Size(211, 34);
+            borderColorToolStripMenuItem.Size = new Size(270, 34);
             borderColorToolStripMenuItem.Text = "Линия";
+            borderColorToolStripMenuItem.Click += borderColorToolStripMenuItem_Click;
             // 
             // fillColorToolStripMenuItem
             // 
             fillColorToolStripMenuItem.Name = "fillColorToolStripMenuItem";
-            fillColorToolStripMenuItem.Size = new Size(211, 34);
+            fillColorToolStripMenuItem.Size = new Size(270, 34);
             fillColorToolStripMenuItem.Text = "Заполнение";
+            fillColorToolStripMenuItem.Click += fillColorToolStripMenuItem_Click;
             // 
             // MainForm
             // 
@@ -229,8 +195,6 @@
             Controls.Add(menuStrip1);
             Name = "MainForm";
             Text = "Редактирование векторной графики";
-            contextMenuStrip2.ResumeLayout(false);
-            contextMenuStrip3.ResumeLayout(false);
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -238,13 +202,6 @@
         }
 
         #endregion
-
-        private ContextMenuStrip contextMenuStrip1;
-        private ContextMenuStrip contextMenuStrip2;
-        private ToolStripMenuItem asdfToolStripMenuItem;
-        private ContextMenuStrip contextMenuStrip3;
-        private ToolStripMenuItem toolStripMenuItem1;
-        private ContextMenuStrip contextMenuStrip4;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem режимToolStripMenuItem;
         private ToolStripMenuItem modeSelectToolStripMenuItem;
